@@ -1,0 +1,5 @@
+name: bm25_w256_o32
+retriever: bm25
+retriever_params: {k1: 1.5, b: 0.75}
+chunking: {size: 256, overlap: 32, prepend_title: true}
+ks: [1, 3, 5, 10, 20]

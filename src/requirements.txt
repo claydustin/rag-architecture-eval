@@ -1,0 +1,6 @@
+# Installed by SageMaker Processing inside the job (source_dir requirements).
+# The sklearn base image already provides pandas / numpy / scikit-learn.
+pyyaml==6.0.3
+rank-bm25==0.2.2
+boto3==1.43.115
+faiss-cpu==1.15.1

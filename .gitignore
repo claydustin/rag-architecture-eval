@@ -1,0 +1,20 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Data + results (regenerate from source; don't commit)
+data/
+results/
+
+# Terraform
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+.terraform.lock.hcl
+# tfvars may contain config/secrets — keep them local
+*.tfvars
+
+# OS
+.DS_Store

@@ -1,0 +1,18 @@
+# Phase 1: data + eval harness + BM25 baseline (no cloud dependencies)
+datasets==5.1.0
+pandas==3.0.6
+pyyaml==6.0.3
+rank-bm25==0.2.2
+pytest==9.1.1
+
+# Phase 2: dense retrieval on Bedrock (embeddings via boto3, FAISS vector index)
+boto3==1.43.115
+faiss-cpu==1.15.1
+numpy==2.5.4
+
+# SageMaker Python SDK (v2 line) — submits Processing jobs. v2 has the classic
+# FrameworkProcessor/ProcessingInput/Output API; v3 reorganized it away.
+sagemaker==2.257.7
+
+# Later phases (install when needed; pin at install time):
+# langchain-aws, langgraph  — agentic RAG (Step 8)
